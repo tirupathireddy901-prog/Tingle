@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark-first, matches the web app's midnight/violet design tokens
+         (docs reference: apps/web/tailwind.config.js). Compose owns all
+         real UI theming (ui/theme/Theme.kt) — these XML themes only cover
+         the window background before Compose takes over, and the splash
+         window. -->
+    <style name="Theme.Tingle" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/midnight</item>
+        <item name="android:statusBarColor">@color/midnight</item>
+    </style>
+
+    <style name="Theme.Tingle.Splash" parent="Theme.Tingle">
+        <item name="android:windowBackground">@color/midnight</item>
+    </style>
+</resources>

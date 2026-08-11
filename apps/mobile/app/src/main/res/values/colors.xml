@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="midnight">#0B0C10</color>
+    <color name="graphite">#1A1C22</color>
+    <color name="charcoal">#232630</color>
+    <color name="violet">#7C5CFC</color>
+    <color name="indigo">#5B4BDB</color>
+    <color name="cyan">#3CD3F0</color>
+    <color name="status_connected">#22C55E</color>
+    <color name="status_connecting">#F59E0B</color>
+    <color name="status_error">#EF4444</color>
+</resources>

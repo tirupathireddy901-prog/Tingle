@@ -1,0 +1,21 @@
+{
+  "name": "tingle",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Tingle — Meet. Talk. Connect. 18+ random video/voice chat platform.",
+  "workspaces": [
+    "apps/web",
+    "apps/admin",
+    "services/api",
+    "services/matchmaking",
+    "services/signaling",
+    "packages/types",
+    "packages/config"
+  ],
+  "scripts": {
+    "dev": "docker compose up",
+    "dev:build": "docker compose up --build",
+    "test": "npm run test --workspace=services/api"
+  },
+  "license": "UNLICENSED"
+}

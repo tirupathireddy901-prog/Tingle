@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Two overlapping circles = "connection" — deliberately abstract,
+         not a literal face/speech-bubble, matching the brand direction
+         (spec section 5: minimal, no sexual imagery, mainstream social
+         platform look). Both within the ~66dp adaptive-icon safe zone. -->
+    <path
+        android:pathData="M22,54 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0 Z"
+        android:fillColor="@color/violet" />
+    <path
+        android:pathData="M50,54 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0 Z"
+        android:fillColor="@color/indigo"
+        android:fillAlpha="0.85" />
+</vector>

@@ -1,0 +1,18 @@
+import { Redis } from "ioredis";
+
+// Redis is the source of truth for ephemeral state only: matchmaking
+// queues, presence, active-call tracking, rate limits, and short-lived
+// signaling state. Postgres remains the durable source of truth for
+// users, matches, reports, etc.
+export const redis = new Redis(
+  process.env.REDIS_URL ?? "redis://localhost:6379"
+);
+
+export async function checkRedisConnection(): Promise<boolean> {
+  try {
+    const pong = await redis.ping();
+    return pong === "PONG";
+  } catch {
+    return false;
+  }
+}
