@@ -3,7 +3,7 @@
 // It talks to the API service directly rather than through the main app's
 // Nginx proxy.
 
-const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+const API_BASE = import.meta.env.VITE_API_URL ?? "https://tingle-production.up.railway.app";
 const TOKEN_KEY = "tingle_admin_token";
 
 export function getAdminToken() {
