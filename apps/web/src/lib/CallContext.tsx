@@ -100,8 +100,9 @@ export function CallProvider({ children, currentUserId }: { children: ReactNode;
         reject(new Error("Not authenticated"));
         return;
       }
-      const protocol = window.location.protocol === "https:" ? "wss" : "ws";
-      const ws = new WebSocket(`${protocol}://${window.location.host}/ws/signal?token=${token}`);
+      const wsBaseUrl =
+        import.meta.env.VITE_WS_URL ?? "wss://tingle-production.up.railway.app/ws/signal";
+      const ws = new WebSocket(`${wsBaseUrl}?token=${encodeURIComponent(token)}`);
 
       ws.onopen = () => {
         wsRef.current = ws;
