@@ -22,6 +22,8 @@ export async function buildApp(): Promise<FastifyInstance> {
     origin: [
       process.env.APP_URL ?? "http://localhost:5173",
       process.env.ADMIN_URL ?? "http://localhost:5175",
+      "https://tingle.pages.dev",
+      "https://tingleadmin.pages.dev",
     ],
   });
 
