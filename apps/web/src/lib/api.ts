@@ -4,7 +4,7 @@
 // the Vite dev server directly on :5173 will not have a working /api.
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL ?? "https://tingle-production.up.railway.app/api";
+  import.meta.env.VITE_API_URL ?? "https://tingle-production.up.railway.app";
 
 const ACCESS_TOKEN_KEY = "tingle_access_token";
 const REFRESH_TOKEN_KEY = "tingle_refresh_token";
